@@ -1,0 +1,14 @@
+{
+  "frontend/src/index.css": "Global styles with warm coral/teal/cream OKLCH color system, Nunito + Playfair Display font imports, and custom utility classes for gradients and text effects.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom coral, teal, and cream color palettes, Nunito/Playfair Display font families, additional border-radius and shadow tokens.",
+  "frontend/src/App.tsx": "Root application component that composes all page sections including the new GameSection inserted between ActionStepsForTeens and SourcesCitations.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header updated to include a highlighted \"🎮 Play the Game\" nav link that smooth-scrolls to the game section, plus the mobile CTA now points to the game section.",
+  "frontend/src/components/HeroSection.tsx": "Full-viewport hero section with background image, gradient overlay, compelling headline, mission statement, Our Watch statistic callout, and a scroll CTA button with bottom wave divider.",
+  "frontend/src/components/WhyBoundariesMatter.tsx": "Section explaining why boundaries matter for teens, featuring three pillar cards (emotional well-being, self-esteem, safe choices), explanatory content citing BLume Behavioral Health, and the HelpGuide expert quote.",
+  "frontend/src/components/TypesOfBoundaries.tsx": "Three-card section covering Physical, Emotional, and Digital boundary types with icons, descriptions, and practical examples written in teen-friendly language, sourced from BLume Behavioral Health.",
+  "frontend/src/components/StatisticsThatMatter.tsx": "Four visually distinct stat cards displaying key research data points from HelpGuide and Our Watch with large numbers, descriptions, and source attribution links.",
+  "frontend/src/components/TrustHealthyRelationships.tsx": "Section on trust and healthy relationships featuring the Possibilities for Change expert quote in a teal hero block, plus four pillar cards covering communication, consent, mutual respect, and warning signs.",
+  "frontend/src/components/ActionStepsForTeens.tsx": "Numbered action steps list for teens (5 steps) alongside a coral workshop callout card and a teal \"Remember This\" card, all in an empowering, non-preachy tone.",
+  "frontend/src/components/SourcesCitations.tsx": "Footer component with all four formatted citations as clickable external links, site branding, copyright year, and caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/GameSection.tsx": "New section component that embeds the Boundary Setting Game for Teens via iframe with a fullscreen toggle button, and shows a styled fallback CTA if the iframe fails to load, with an always-visible \"open in new tab\" link."
+}

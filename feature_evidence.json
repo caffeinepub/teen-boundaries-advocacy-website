@@ -1,0 +1,42 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-add-a-new-game-section-page-to-the-frontend-that-embeds-or-links-to-the-boundary-setting-game-for-teens-the-game-is-hosted-at-https-www-figma-com-make-2g9h9fkhp10em4htzi1axl-boundary-setting-game-for-teens-t-u3cianwogceygxpy-20-fullscreen-1-embed-it-via-an-iframe-with-fullscreen-support-enabled-allow-fullscreen-if-iframe-embedding-is-blocked-by-figma-fall-back-to-a-prominent-styled-call-to-action-button-that-opens-the-link-in-a-new-tab",
+      "featureTitle": "Add a new 'Game' section/page to the frontend that embeds or links to the Boundary Setting Game for Teens. The game is hosted at: https://www.figma.com/make/2G9H9FkHp10em4HtzI1AXl/Boundary-Setting-Game-for-Teens?t=U3cianwoGcEygXpy-20&fullscreen=1 — embed it via an <iframe> with fullscreen support enabled (allow='fullscreen'). If iframe embedding is blocked by Figma, fall back to a prominent styled call-to-action button that opens the link in a new tab.",
+      "files": [
+        "frontend/src/App.tsx",
+        "frontend/src/components/GameSection.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-play-the-game-navigation-item-to-the-sticky-header-so-users-can-jump-directly-to-the-game-section-from-anywhere-on-the-page-consistent-with-the-existing-smooth-scroll-navigation-pattern",
+      "featureTitle": "Add a 'Play the Game' navigation item to the sticky header so users can jump directly to the game section from anywhere on the page, consistent with the existing smooth-scroll navigation pattern.",
+      "files": [
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Implement Boundary Setting Game for Teens",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Add a new 'Game' section to the frontend that embeds the Boundary Setting Game for Teens via iframe with fullscreen support, or falls back to a styled call-to-action button if embedding is blocked",
+      "acceptanceCriteria": [
+        "A dedicated 'Play the Game' section is visible on the page.",
+        "The game iframe or link renders without broken URLs.",
+        "Clicking the link/iframe loads the Figma game at the exact URL provided.",
+        "If embedded via iframe, a fullscreen toggle button is present and functional.",
+        "If direct embed is blocked, a clearly styled 'Play Now' button opens the game URL in a new tab."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/GameSection.tsx",
+          "operation": "create",
+          "description": "Create a new section component that embeds the Boundary Setting Game for Teens. The component should attempt to render the game using an iframe with src='https://www.figma.com/make/2G9H9FkHp10em4HtzI1AXl/Boundary-Setting-Game-for-Teens?t=U3cianwoGcEygXpy-20&fullscreen=1' and allow='fullscreen'. Include an onerror or fallback mechanism that detects if the iframe fails to load, and in that case renders a prominently styled 'Play Now' call-to-action button that opens the game URL in a new tab (target='_blank' rel='noopener noreferrer'). Style the section consistently with the existing coral/teal/cream OKLCH palette and Nunito/Playfair Display fonts. Ensure the section has an id='game' for smooth-scroll navigation."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import the new GameSection component and insert it into the page layout in an appropriate position (e.g., after ActionStepsForTeens and before SourcesCitations). Ensure the section is rendered so users can access the game from the single-page layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Add a 'Play the Game' navigation item to the sticky header that smoothly scrolls to the new game section, consistent with the existing navigation pattern",
+      "acceptanceCriteria": [
+        "The header nav includes a 'Play the Game' link.",
+        "Clicking it smoothly scrolls to the game section.",
+        "The link is styled consistently with the other nav items."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Add a new 'Play the Game' navigation link to the desktop nav menu that points to '#game' and uses the same smooth-scroll behavior as the existing nav items. Ensure the link is styled consistently with the other nav items in the header (same font, spacing, hover effects). Position the link logically within the nav sequence (e.g., after 'Action Steps' and before 'Sources')."
+        }
+      ]
+    }
+  ]
+}

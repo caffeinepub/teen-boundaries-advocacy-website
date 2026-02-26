@@ -1,0 +1,57 @@
+{
+  "kind": "build_request",
+  "title": "Implement Boundary Setting Game for Teens",
+  "projectName": "BoundaryStrong",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Add a new 'Game' section/page to the frontend that embeds or links to the Boundary Setting Game for Teens. The game is hosted at: https://www.figma.com/make/2G9H9FkHp10em4HtzI1AXl/Boundary-Setting-Game-for-Teens?t=U3cianwoGcEygXpy-20&fullscreen=1 — embed it via an <iframe> with fullscreen support enabled (allow='fullscreen'). If iframe embedding is blocked by Figma, fall back to a prominent styled call-to-action button that opens the link in a new tab.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ],
+        "quotes": [
+          "implement our game somewhere and make sure the link works https://www.figma.com/make/2G9H9FkHp10em4HtzI1AXl/Boundary-Setting-Game-for-Teens?t=U3cianwoGcEygXpy-20&fullscreen=1"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A dedicated 'Play the Game' section is visible on the page.",
+        "The game iframe or link renders without broken URLs.",
+        "Clicking the link/iframe loads the Figma game at the exact URL provided.",
+        "If embedded via iframe, a fullscreen toggle button is present and functional.",
+        "If direct embed is blocked, a clearly styled 'Play Now' button opens the game URL in a new tab."
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Add a 'Play the Game' navigation item to the sticky header so users can jump directly to the game section from anywhere on the page, consistent with the existing smooth-scroll navigation pattern.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-6"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The header nav includes a 'Play the Game' link.",
+        "Clicking it smoothly scrolls to the game section.",
+        "The link is styled consistently with the other nav items."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify any files under frontend/src/hooks/ or frontend/src/components/ui.",
+    "Use the exact Figma URL provided: https://www.figma.com/make/2G9H9FkHp10em4HtzI1AXl/Boundary-Setting-Game-for-Teens?t=U3cianwoGcEygXpy-20&fullscreen=1",
+    "Preserve the existing visual design system (coral/teal/cream OKLCH palette, Nunito/Playfair Display fonts)."
+  ],
+  "nonGoals": [
+    "Do not rebuild or recreate the game logic locally — the game is hosted externally on Figma.",
+    "Do not modify backend logic.",
+    "Do not change any existing sections of the advocacy site."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

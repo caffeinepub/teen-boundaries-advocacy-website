@@ -1,0 +1,23 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented functionality.",
+  "feature_evidence.json": "Feature evidence report documenting two implemented features: the GameSection component with iframe embedding and the 'Play the Game' header navigation item, both with high confidence.",
+  "frontend-file-summaries.txt": "JSON map of frontend source files to short descriptions, serving as a reference summary of each component's purpose and content.",
+  "frontend/index.css": "Tailwind CSS entry file that defines CSS custom properties for the light and dark theme color tokens used throughout the app.",
+  "frontend/index.html": "HTML shell for the React SPA, setting the page title to 'Teen Boundaries Advocacy Website' and mounting the app at the root div.",
+  "frontend/src/App.tsx": "Root React component that assembles all page sections in order, including the GameSection inserted between ActionStepsForTeens and SourcesCitations.",
+  "frontend/src/components/ActionStepsForTeens.tsx": "Section component rendering five numbered action steps for teens on setting boundaries, with icons, descriptions, and supplementary callout cards.",
+  "frontend/src/components/GameSection.tsx": "Section component that embeds the Boundary Setting Game for Teens via an iframe with a fullscreen toggle, and displays a styled fallback CTA button if the iframe fails to load.",
+  "frontend/src/components/Header.tsx": "Sticky navigation header with smooth-scroll links including a highlighted '🎮 Play the Game' item, a logo with fallback, and a mobile 'Play Game' CTA button.",
+  "frontend/src/components/HeroSection.tsx": "Full-screen hero section for a teen relationship health site, featuring a background image, headline, mission statement, a statistics callout from Our Watch (June 2025), and a scroll-to-next CTA button.",
+  "frontend/src/components/SourcesCitations.tsx": "Footer component that renders a numbered list of academic/organizational citations with external links, plus a Caffeine.ai referral attribution link.",
+  "frontend/src/components/StatisticsThatMatter.tsx": "Section component displaying four key statistics about teen relationship boundaries as styled cards with large numbers, descriptions, and sourced links to HelpGuide and Our Watch.",
+  "frontend/src/components/TrustHealthyRelationships.tsx": "Section component covering four pillars of healthy relationships (communication, consent, mutual respect, warning signs) alongside a featured expert blockquote styled on a teal gradient background.",
+  "frontend/src/components/TypesOfBoundaries.tsx": "Section component presenting three types of personal boundaries (physical, emotional, and a third truncated type) as styled cards with icons, descriptions, and bullet-point examples.",
+  "frontend/src/components/WhyBoundariesMatter.tsx": "React section component displaying three informational pillars (Emotional Well-Being, Self-Esteem, Safe Choices) about why boundaries matter for teens, with icons, styled cards, and supporting text.",
+  "frontend/src/hooks/useActor.ts": "Custom React hook that creates and caches an ICP backend actor (authenticated or anonymous) using React Query, and invalidates dependent queries whenever the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom React hook and context provider for Internet Identity authentication on ICP, exposing login/logout functions, identity state, and login status.",
+  "frontend/src/index.css": "Global CSS file importing Google Fonts and defining Tailwind base styles, OKLCH-based CSS custom properties for light/dark themes, and utility classes for gradients and text effects.",
+  "frontend/src/main.tsx": "Application entry point that mounts the React app with QueryClientProvider and InternetIdentityProvider wrappers around the root App component.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the theme with custom fonts (Nunito, Playfair Display), OKLCH-based color palettes (coral, teal, cream), and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state metadata tracking the boundary-setting teen advocacy site's features, architectural notes, and a pending request to correctly implement and embed the Boundary Setting Game for Teens from a Figma link."
+}
